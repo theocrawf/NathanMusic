@@ -1,3 +1,14 @@
-body {
-  background-color: aqua;
+body{
+  margin: 0;
+  color: #ffffff;
+}
+#top{
+  background-image: url(./images/nathan1.png);
+}
+#middle{
+  background-image: url(./images/background.png);
+  background-color: black;
+}
+#bottom{
+  background-image: url(./images/bottom.png);
 }

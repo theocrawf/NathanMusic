@@ -4,8 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NathanStrubhart</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>Nathan Strubhart</h1>
+    <!-- top section for basic info and a cover song for the week -->
+    <div id="top">
+        <div id="covermusic">
+            <h2>Cover of the Week!</h2>
+            <!-- need to get a pause button as well for when we push play it changes to pause and when you press it for pause it changes to play -->
+            <button class="pressplay"><img src="./images/play.png" alt="PlayButton"></button>
+            <!-- will this light up of be darker or lighter as the song progresses -->
+            <img class="progress" src="./images/progress.png" alt="">
+            <p id="coverartist">RadioHead</p>
+            <p id="coversongtitle">"Creep"</p>
+        </div>
+        <h1>Nathan <br> <span id="lastname">Strubhart</span></h1>
+        <p>Coming Soon!</p>
+        <a href="" target="_blank"><button>BUY ALBUM</button></a>
+        <a href="" target="_blank"><button>Follow</button></a>
+        <a href="" target="_blank"><img src="./images/youtube.png" alt="Youtube"></a>
+        <a href="" target="_blank"><img src="./images/instagram.png" alt="Instagram"></a>
+        <a href="" target="_blank"><img src="./images/facebook.png" alt="Facebook"></a>
+    </div>
+    <!-- middle sections -->
+    <div id="middle">
+        <div id="topMiddle">
+            <img src="./images/nathan2.png" alt="Nathan">
+            <h1>Nathan Strubhart</h1>
+            <p>Nathan Strubhart Bombastic rhythm and acoustic blues, Nathan Strubhart, armed with soulful grooves and piercing lyrical ammo all fired off with a wink 
+                and a shot of whisky. The tunesmith seesaws from deft songwriting craftsman in the studio to effortless showman on the stage. His tempo and key changes 
+                keep you guessing, while the melodic prose will keep you hooked...</p>
+            <!-- does this button expand or does it take you elsewhere -->
+            <button id="readmore">READ MORE</button>
+        </div>
+        <!-- slight info on what the artist does -->
+        <div id="middleEarth">
+            <h1>Music Production</h1>
+            <p>I produce music for artists and content creators on YouTube as well as offer recording services.</p>
+            <p>You can hear my instrumental work <a class="red">here</a>.</p>
+            <!-- this will be a video put i just have a image for now -->
+            <img src="./images/video.png" alt="Youtube Video">
+        </div>
+        <!-- this section is only for pictures -->
+        <div id="pictureMiddle">
+            <img src="./images/nm.png" alt="Nathan">
+            <img src="./images/nm2.png" alt="Nathan">
+            <img src="./images/nm3.png" alt="Nathan">
+            <img src="./images/nm4.png" alt="Nathan">
+        </div>
+        <!-- this portion is for the album and songs
+                I have broken it down into different divs for each song -->
+        <div id="bottomMiddle">
+            <img src="./images/album.png" alt="Album Cover">
+            <a href="" target="_blank"><button>BUY ALBUM</button></a>
+            <div class="songs">
+                <button class="pressplay"><img src="./images/play.png" alt="PlayButton"></button>
+                <!-- will this light up of be darker or lighter as the song progresses -->
+                <img class="progress" src="./images/progress.png" alt="">
+                <p id="artist">Nathan Strubhart</p>
+                <p id="songtitle">"Creep"</p>
+            </div>
+            <div class="songs">
+                <button class="pressplay"><img src="./images/play.png" alt="PlayButton"></button>
+                <!-- will this light up of be darker or lighter as the song progresses -->
+                <img class="progress" src="./images/progress.png" alt="">
+                <p id="artist">Nathan Strubhart</p>
+                <p id="songtitle">"Lemonhead"</p>
+            </div>
+            <div class="songs">
+                <button class="pressplay"><img src="./images/play.png" alt="PlayButton"></button>
+                <!-- will this light up of be darker or lighter as the song progresses -->
+                <img class="progress" src="./images/progress.png" alt="">
+                <p id="artist">Nathan Strubhart</p>
+                <p id="songtitle">"House In LA"</p>
+            </div>
+        </div>
+        <!--  bottom section -->
+        <div id="bottom">
+            <!-- is this a list of things and therefor only a h1 tag or are they different things to click on? -->
+            <h1>Booking Requests Project Ideas</h1>
+            <h2>Nathan Strubhart</h2>
+            <p>Austin, Tx.</p>
+            <a href="" target="_blank"><img src="./images/email.png" alt="Email"></a>
+            <a href="" target="_blank"><img src="./images/instagram.png" alt="Instagram"></a>
+            <a href="" target="_blank"><img src="./images/facebook.png" alt="Facebook"></a>
+            <a href="" target="_blank"><button>Follow</button></a>
+        </div>
+    </div>
 </body>
+<script src="./index.js"></script>
 </html>
