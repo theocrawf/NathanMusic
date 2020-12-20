@@ -1,14 +1,90 @@
+/* mobile view */
+@media only screen and (max-width: 700px){
+
+}
+/* ---------------- desktop view ------------------------------------------ */
+@media only screen and (min-width:700px){
+  /* ------------------top section -------------------------- */
+  
+}
+/* ----------------- outside of media queries ----------------------------- */
+
 body{
   margin: 0;
   color: #ffffff;
+  margin: 0%;
+  padding: 0%;
 }
+.pressplay{
+  background-color: transparent;
+  border: none;
+}
+button{
+  cursor: pointer;
+}
+a{
+  cursor: pointer;
+}
+a .follow{
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: #ffffff;
+  color: #ffffff;
+  width: 117px;
+  height: 68px;
+  font-size: 30px;
+}
+.buy{
+  font-size: 41px;
+  color: #ff0000;
+  background-color: transparent;
+  border-color: #ff0000;
+  height: 92px;
+}
+/* ------------------- top section ----------------------------------------- */
 #top{
   background-image: url(./images/nathan1.png);
+  padding-top: 1%;
 }
+#covermusic{
+  float: right;
+}
+#firstname{
+  margin: 20% auto auto 15%;
+  font-size: 100px;
+  font-weight: lighter;
+  line-height: 120px;
+}
+#lastname{
+  font-size: 200px;
+  margin-left: -10%; 
+}
+#top p{
+  font-size: 42px;
+}
+
+#socialmedia{
+  display: flex;
+  justify-content: center;
+}
+#socialmedia img{
+  width: 50px;
+}
+#insta{
+  margin: auto 5% auto 5%;
+}
+/* -------------------- middle section ------------------------------------- */
 #middle{
   background-image: url(./images/background.png);
   background-color: black;
 }
+/* --------------------- top middle ---------------------------------------- */
+#topMiddle img{
+  width: 500px;
+  margin: 20% auto auto 8%;
+}
+
+/* --------------------- bottom section ------------------------------------ */
 #bottom{
   background-image: url(./images/bottom.png);
 }
