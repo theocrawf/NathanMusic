@@ -34,6 +34,10 @@ a .follow{
   height: 68px;
   font-size: 30px;
 }
+.red{
+  text-decoration: none;
+  color: #ff0000;
+}
 .buy{
   font-size: 41px;
   color: #ff0000;
@@ -81,9 +85,14 @@ a .follow{
 /* --------------------- top middle ---------------------------------------- */
 #topMiddle img{
   width: 500px;
-  margin: 20% auto auto 8%;
+ 
 }
-
+#topMiddle h1 {
+  
+}
+#topMiddle p {
+ 
+}
 /* --------------------- bottom section ------------------------------------ */
 #bottom{
   background-image: url(./images/bottom.png);
