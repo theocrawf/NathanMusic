@@ -93,7 +93,39 @@ a .follow{
 #topMiddle p {
  
 }
+/* ------------------- middle earth ----------------------------------------- */
+
+
+/* -------------------- picture middle -------------------------------------- */
+#pictureMiddle{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /* --------------------- bottom section ------------------------------------ */
 #bottom{
   background-image: url(./images/bottom.png);
+  background-repeat: no-repeat;
+}
+#bottom h1{
+  font-weight: lighter;
+  font-size: 50px;
+  margin: auto auto 15% 5%;
+  padding-top: 5%;
+}
+#circle{
+  font-size: 10px;
+}
+#bottom h2{
+  font-size: 50px;
+  font-weight: lighter;
+  margin-left: 5%;
+}
+#bottom p{
+  font-size: 35px;
+  margin-left: 5%;
+  margin-top: -2.5%;
+}
+.med{
+  margin: 5% auto 5% 5%;
 }
