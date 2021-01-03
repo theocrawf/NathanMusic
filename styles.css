@@ -1,5 +1,28 @@
 /* mobile view */
 @media only screen and (max-width: 700px) {
+  /* -------- top ----------------- */
+  #top{
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5%;
+  }
+  /* ------------------------topMiddle ------------------ */
+  #nate{
+    width: 350px;
+  }
+  /*------------------------- middleEarth--------------------------- */
+  iframe{
+    width: 350px;
+  }
+  /* ----------------------picture middle ---------------------- */
+  #pictureMiddle img{
+    width: 350px;
+  }
+  /* --------------------- bottom middle/ album ------------------- */
+  #album{
+    width: 350px;
+  }
 }
 /* ---------------- desktop view ------------------------------------------ */
 @media only screen and (min-width: 700px) {
@@ -14,9 +37,10 @@
       ". . follow"
       ". soc .";
   }
-  body {
-    font-family: "Roboto", sans-serif;
+  #lastname {
+    font-size: 200px;
   }
+  
   /* ---------------top middle section ------------------- */
   #topMiddle {
     display: grid;
@@ -67,6 +91,10 @@
     margin-bottom: 20%;
     margin-top: 12%;
   }
+  #pictureMiddle {
+    display: flex;
+    justify-content: space-evenly;
+  }
   /* ------------------- bottom middle ------------------- */
   #bottomMiddle {
     display: grid;
@@ -87,6 +115,7 @@
     margin-right: 25%;
     margin-left: 0%;
   }
+  
 }
 /* ----------------- outside of media queries ----------------------------- */
 
@@ -95,6 +124,8 @@ body {
   color: #ffffff;
   margin: 0%;
   padding: 0%;
+  font-family: "Roboto", sans-serif;
+
 }
 .pressplay {
   background-color: transparent;
@@ -131,9 +162,9 @@ a .follow {
   background-image: url(./images/nathan1.png);
   /* padding-top: 1%; */
 }
-#covermusic {
+/* #covermusic {
   float: right;
-}
+} */
 #firstname {
   /* margin: 20% auto auto 15%; */
   font-size: 100px;
@@ -155,7 +186,7 @@ a .follow {
   grid-area: up;
 }
 #lastname {
-  font-size: 200px;
+  /* font-size: 200px; */
   grid-area: name2;
   /* margin-left: -10%;  */
 }
@@ -189,7 +220,7 @@ a .follow {
 }
 /* --------------------- top middle ---------------------------------------- */
 #topMiddle img {
-  width: 500px;
+  /* width: 500px; */
   grid-area: pic;
 }
 #topMiddle h1 {
@@ -220,10 +251,10 @@ a .follow {
 }
 
 /* -------------------- picture middle -------------------------------------- */
-#pictureMiddle {
+/* #pictureMiddle {
   display: flex;
   justify-content: space-evenly;
-}
+} */
 /* --------------------- bottom middle ------------------------------------ */
 #bottomMiddle img {
   grid-area: album;
@@ -239,7 +270,7 @@ a .follow {
 }
 /* --------------------- bottom section ------------------------------------ */
 #bottom {
-  background-image: url(./images/bottom.png);
+  /* background-image: url(./images/bottom.png); */
   background-repeat: no-repeat;
 }
 #bottom h1 {
