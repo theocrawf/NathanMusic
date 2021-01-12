@@ -6,6 +6,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 5%;
+    /* display: grid; */
+    /* grid-template-areas:
+      "hamb ."
+      ". up "
+      "play song "
+      ". name "
+      ".  soc"
+      "soon  . "
+      "buy  follow"; */
   }
   #hamb {
     font-size: 50px;
@@ -13,23 +22,56 @@
   #desktoppro {
     display: none;
   }
-  .progress {
-    margin-bottom: 5%;
+  #top .progress {
+    margin-top: 8%;
+    margin-right: 2%;
+    height: 5px;
   }
   .pressplay {
     margin-right: 2%;
   }
+  h2 {
+    text-align: center;
+    font-weight: lighter;
+  }
+  #covermusic {
+    display: flex;
+    /* align-self: start; */
+  }
+
+  #covermusic p {
+    font-size: 25px;
+  }
+
   /* ------------------------topMiddle ------------------ */
   #nate {
-    width: 350px;
+    width: 250px;
+    margin: 15% auto 10% 25%;
+  }
+  #topMiddle h1 {
+    margin-left: 5%;
+  }
+  #topMiddle p {
+    margin-left: 5%;
+  }
+  #readmore {
+    margin-left: 5%;
   }
   /*------------------------- middleEarth--------------------------- */
   iframe {
     width: 350px;
+    margin: 10% auto 20% 15%;
+  }
+  #middleEarth h1 {
+    margin: 25% auto auto 5%;
+  }
+  #middleEarth p {
+    margin-left: 5%;
   }
   /* ----------------------picture middle ---------------------- */
   #pictureMiddle img {
-    width: 350px;
+    /* width: 350px; */
+    display: none;
   }
   /* --------------------- bottom middle/ album ------------------- */
   #album {
@@ -189,7 +231,9 @@ a .follow {
   line-height: 120px; */
   grid-area: name;
 }
-
+#hamb {
+  grid-area: hamb;
+}
 #top .pressplay {
   grid-area: play;
 }
@@ -204,12 +248,12 @@ a .follow {
 }
 #lastname {
   /* font-size: 200px; */
-  grid-area: name2;
+  /* grid-area: name2; */
   /* margin-left: -10%;  */
 }
 #top p {
-  font-size: 42px;
-  grid-area: soon;
+  /* font-size: 42px; */
+  /* grid-area: soon; */
 }
 #top .buy {
   grid-area: buy;
