@@ -8,25 +8,28 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7da1cef219.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- top section for basic info and a cover song for the week -->
     <div id="top">
+        <i class="fas fa-bars" id="hamb"></i>
         <div id="covermusic">
             <h2>Cover of the Week!</h2>
             <!-- need to get a pause button as well for when we push play it changes to pause and when you press it for pause it changes to play -->
             <button class="pressplay"><img src="./images/play.png" alt="PlayButton"></button>
             <!-- will this light up of be darker or lighter as the song progresses -->
-            <img class="progress" src="./images/progress.png" alt="">
+            <img class="progress" src="./images/progress.png" alt="" id="desktoppro">
+            <img class="progress" src="./images/mobileview.png" alt="" id="mobilepro">
             <p id="coverartist">RadioHead</p>
             <p id="coversongtitle">"Creep"</p>
         </div>
         <h1 id="firstname">Nathan <br> <span id="lastname">Strubhart</span></h1>
         <div id="soon">
         <p>Coming Soon!</p>
-        <a href="" target="_blank"><button class="buy">BUY ALBUM</button></a>
+        <a href="" target="_blank"><button class="buy">Buy Album</button></a>
         </div>
-        <a href="" target="_blank"><button class="follow">Follow</button></a>
+        <a href="" target="_blank"><button class="follow">Subscirbe</button></a>
         <div id="socialmedia">
         <a href="" target="_blank"><img src="./images/youtube.png" alt="Youtube"></a>
         <a href="" target="_blank" id="insta"><img src="./images/instagram.png" alt="Instagram"></a>
