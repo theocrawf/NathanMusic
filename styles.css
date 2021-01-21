@@ -6,15 +6,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 5%;
-    /* display: grid; */
-    /* grid-template-areas:
-      "hamb ."
-      ". up "
-      "play song "
-      ". name "
-      ".  soc"
-      "soon  . "
-      "buy  follow"; */
   }
   #hamb {
     font-size: 50px;

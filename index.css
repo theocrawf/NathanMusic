@@ -1,0 +1,170 @@
+/* mobile view */
+@media only screen and (max-width: 700px) {
+    /* this is the progress bar of the song */
+    .desktoppro{
+        display: none;
+    }
+    #middle {
+        background-image: url(./images/background.png);
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+}
+/* ----------------------------desktop view----------------------------- */
+@media only screen and (min-width: 700px) {
+    /* this is the progress bar of the song */
+    .mobilepro{
+        display: none;
+    }
+    #middle {
+        background-image: url(./images/background.png);
+        background-color: black;
+        background-repeat: no-repeat;
+      }
+
+}
+/* ----------------------------outside media queries-------------------- */
+
+body {
+    margin: 0;
+    color: #ffffff;
+    margin: 0%;
+    padding: 0%;
+    font-family: "Roboto", sans-serif;
+  }
+  .pressplay {
+    background-color: transparent;
+    border: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  a {
+    cursor: pointer;
+  }
+  a .follow {
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: #ffffff;
+    color: #ffffff;
+    width: 152px;
+    height: 47px;
+    font-size: 30px;
+  }
+  .red {
+    text-decoration: none;
+    color: #952525;
+  }
+  .buy {
+    font-size: 25px;
+    color: white;
+    background-color: #952525;
+    border: none;
+    border-radius: 10px;
+    width: 152px;
+    height: 47px;
+  }
+  /* ------------------- top section ----------------------------------------- */
+  #top {
+    background-image: url(./images/nathan1.png);
+   }
+  /
+  #firstname {
+    
+  }
+  
+  #top .pressplay {
+  }
+  #top .progress {
+  }
+  #covermusic p {
+
+  }
+  #top h2 {
+    
+  }
+  #lastname {
+    
+  }
+  #top p {
+    
+  }
+  #top .buy {
+    
+  }
+  #top .follow {
+   
+  }
+  
+  #socialmedia {
+    
+  }
+  #socialmedia img {
+    width: 50px;
+  }
+  #insta {
+    margin: auto 5% auto 5%;
+  }
+  /* -------------------- middle section ------------------------------------- */
+  /* #middle {
+    background-image: url(./images/background.png);
+    background-color: black;
+    background-repeat: no-repeat;
+  } */
+  /* --------------------- top middle ---------------------------------------- */
+  #topMiddle img {
+    /* width: 500px; */
+    
+  }
+  #topMiddle h1 {
+    
+  }
+  #topMiddle p {
+    
+  }
+  #readmore {
+    
+    text-transform: uppercase;
+    color: #ff0000;
+    background-color: transparent;
+    border: none;
+  }
+  /* ------------------- middle earth ----------------------------------------- */
+  
+  
+  /* -------------------- picture middle -------------------------------------- */
+  /* #pictureMiddle {
+    display: flex;
+    justify-content: space-evenly;
+  } */
+  /* --------------------- bottom middle ------------------------------------ */
+  
+  /* --------------------- bottom section ------------------------------------ */
+  #bottom {
+    /* background-image: url(./images/bottom.png); */
+    background-repeat: no-repeat;
+  }
+  #bottom h1 {
+    font-weight: lighter;
+    font-size: 50px;
+    margin: auto auto 15% 5%;
+    padding-top: 5%;
+  }
+  #circle {
+    font-size: 10px;
+  }
+  #bottom h2 {
+    font-size: 50px;
+    font-weight: lighter;
+    margin-left: 5%;
+  }
+  #bottom p {
+    font-size: 35px;
+    margin-left: 5%;
+    margin-top: -2.5%;
+  }
+  .med {
+    margin: 5% auto 5% 5%;
+  }
+  

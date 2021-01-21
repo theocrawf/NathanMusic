@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NathanStrubhart</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7da1cef219.js" crossorigin="anonymous"></script>
@@ -13,14 +13,14 @@
 <body>
     <!-- top section for basic info and a cover song for the week -->
     <div id="top">
-        <i class="fas fa-bars" id="hamb"></i>
+        
         <h2>Cover of the Week!</h2>
         <div id="covermusic">
             <!-- need to get a pause button as well for when we push play it changes to pause and when you press it for pause it changes to play -->
             <button class="pressplay"><img src="./images/play.png" alt="PlayButton"></button>
             <!-- will this light up of be darker or lighter as the song progresses -->
-            <img class="progress" src="./images/progress.png" alt="" id="desktoppro">
-            <img class="progress" src="./images/mobileview.png" alt="" id="mobilepro">
+            <img class="progress desktoppro" src="./images/progress.png" alt="">
+            <img class="progress mobilepro" src="./images/mobileview.png" alt="">
             <p id="coverartist">RadioHead</p>
             <p id="coversongtitle">"Creep"</p>
         </div>
@@ -58,6 +58,7 @@
         </div>
         <!-- this section is only for pictures -->
         <div id="pictureMiddle">
+            <p>Gallery</p>
             <img src="./images/nm.png" alt="Nathan">
             <img src="./images/nm2.png" alt="Nathan">
             <img src="./images/nm3.png" alt="Nathan">
@@ -67,18 +68,21 @@
                 I have broken it down into different divs for each song -->
         <div id="bottomMiddle">
             <img src="./images/album.png" alt="Album Cover" id="album">
-            <a href="" target="_blank"><button class="buy">BUY ALBUM</button></a>
+            <p>COMING SOON</p><!-- THIS SITS ON TOP OF THE ALBUM COVER -->
+            <a href="" target="_blank"><button class="buy">Buy Album</button></a>
             <div class="songs" id="song1">
                 <button class="pressplay"><img src="./images/play.png" alt="PlayButton"></button>
                 <!-- will this light up of be darker or lighter as the song progresses -->
-                <img class="progress" src="./images/progress.png" alt="">
+                <img class="progress desktoppro" src="./images/progress.png" alt="">
+                <img class="progress mobilepro" src="./images/mobileview.png" alt="">
                 <p id="artist">Nathan Strubhart</p>
                 <p id="songtitle">"Creep"</p>
             </div>
             <div class="songs" id="song2">
                 <button class="pressplay"><img src="./images/play.png" alt="PlayButton"></button>
                 <!-- will this light up of be darker or lighter as the song progresses -->
-                <img class="progress" src="./images/progress.png" alt="">
+                <img class="progress desktoppro" src="./images/progress.png" alt="">
+                <img class="progress mobilepro" src="./images/mobileview.png" alt="">
                 <p id="artist">Nathan Strubhart</p>
                 <p id="songtitle">"Lemonhead"</p>
                 <audio src="./music/My Somebody Acoustic.mp3" controls></audio>
@@ -93,11 +97,12 @@
             <h2>Nathan Strubhart</h2>
             <p>Austin, Tx.</p>
             <div id="bottomMed">
+                <p>Contact Me</p>
                 <a href="" target="_blank"><img src="./images/email.png" class="med" alt="Email"></a>
+                <p>Follow Me</p>
+                <a href="" target="_blank"><img src="./images/youtube.png" class="med" alt="Youtube"></a>
                 <a href="" target="_blank"><img src="./images/instagram.png" class="med" alt="Instagram"></a>
                 <a href="" target="_blank"><img src="./images/facebook.png" class="med" alt="Facebook"></a>
-                <a href="" target="_blank"><img src="./images/youtube.png" class="med" alt="Youtube"></a>
-                
             </div>
             <a href="" target="_blank"><button class="follow">Follow</button></a>
         </div>
