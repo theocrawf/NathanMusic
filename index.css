@@ -10,6 +10,10 @@
         background-repeat: no-repeat;
         background-position: right;
       }
+      /* bottom middle/ album section */
+      #album{
+        width: 345px;
+      }
 }
 /* ----------------------------desktop view----------------------------- */
 @media only screen and (min-width: 700px) {
@@ -17,10 +21,31 @@
     .mobilepro{
         display: none;
     }
+    /* for entire middle section */
     #middle {
         background-image: url(./images/background.png);
         background-color: black;
         background-repeat: no-repeat;
+      }
+      /* album section/ bottom middle */
+      #album{
+        width: 650px;
+        display: block;
+        margin: 15% auto 5% auto;
+      }
+      #rotate{
+        font-size: 100px;
+      }
+      /* gallery section/ picture middle */
+      #pictureMiddle {
+        margin-bottom: 20%;
+        margin-top: 2%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      #pictureMiddle img{
+        width: 450px;
       }
 
 }
@@ -69,7 +94,7 @@ body {
   #top {
     background-image: url(./images/nathan1.png);
    }
-  /
+  
   #firstname {
     
   }
@@ -131,14 +156,24 @@ body {
     border: none;
   }
   /* ------------------- middle earth ----------------------------------------- */
-  
+  /* --------------------- bottom middle ------------------------------------ */
+  /* section is for the album and songs */
+  #rotate{
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 130px;
+    left: 600px;
+  }
+  #working{
+    position: relative;
+  }
   
   /* -------------------- picture middle -------------------------------------- */
-  /* #pictureMiddle {
-    display: flex;
-    justify-content: space-evenly;
-  } */
-  /* --------------------- bottom middle ------------------------------------ */
+  /* gallery */
+  #gallery{
+    margin: 15% auto 2% 2%;
+    font-size: 50px;
+  }
   
   /* --------------------- bottom section ------------------------------------ */
   #bottom {
