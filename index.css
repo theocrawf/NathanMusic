@@ -10,10 +10,106 @@
         background-repeat: no-repeat;
         background-position: right;
       }
+      /* top middle */
+      #nate{
+        width: 350px;
+        display: block;
+        margin: auto auto 15% auto;
+        padding-top: 20%;
+      }
+      #topMiddle h1{
+        margin-left: 5%;
+        font-weight: lighter;
+      }
+      #topMiddle p{
+        font-size: 20px;
+        margin: auto auto auto 5%;
+      }
+      /* middle earth/ youtube video */
+      iframe{
+        width: 400px; 
+        height: 220px;
+        display: block;
+        margin: 15% auto 40% auto;
+      }
+      #middleEarth p{
+        font-size: 20px;
+        margin-left: 5%;
+      }
+      #middleEarth h1{
+        font-weight: lighter;
+        margin: 30% auto 5% 5%;
+      }
       /* bottom middle/ album section */
       #album{
         width: 345px;
       }
+      #rotate{
+        bottom: 25%;
+        top: 25%;
+        left: 25%; 
+        right: 25%;
+        font-size: 60px;
+      }
+      #buyBottom{
+        display: block;
+        margin: 5% 35% 10% 35%;
+      }
+      /* .songs{
+        display: inline-block;
+      } */
+      .mobilepro{
+        height: 5px;
+        /* margin: 6% 5% auto 5%; */
+      }
+      #song1, #song2{
+        margin: 5%;
+      }
+
+      /* picture middle/ gallery */
+      #pictureMiddle img{
+        width: 250px;
+      }
+      /* bottom section for contact */
+      #bottom h1 {
+        font-weight: lighter;
+        font-size: 30px;
+        margin: 20% auto 15% 5%;
+        padding-top: 5%;
+        display: flex;
+        justify-content: space-evenly;
+        word-spacing: 20px;
+      }
+      .med {
+        margin: auto auto 5% 5%;
+      }
+      .under{
+        margin-left: 5%;
+        font-size: 24px;
+      }
+      .follow{
+        margin: 15% auto 15% 35%;
+      }
+      #lastly{
+        font-size: 72px;
+        letter-spacing: 10px;
+      }
+      .naming{
+        margin-top: 25%;
+        text-align: center;
+        line-height: 50px;
+      }
+      #firstly{
+        margin-right: 25%;
+        font-size: 36px;
+      }
+      .local{
+        float: right;
+        margin: -5% 10% 25% auto;
+        font-size: 18px;
+      }
+
+
 }
 /* ----------------------------desktop view----------------------------- */
 @media only screen and (min-width: 700px) {
@@ -27,6 +123,11 @@
         background-color: black;
         background-repeat: no-repeat;
       }
+      /* middleEarth/ youtube section */
+      iframe{
+        width: 560px; 
+        height: 315px;
+      }
       /* album section/ bottom middle */
       #album{
         width: 650px;
@@ -35,6 +136,9 @@
       }
       #rotate{
         font-size: 100px;
+          bottom: 40%;
+          left: 25%;
+          right: 25%; 
       }
       /* gallery section/ picture middle */
       #pictureMiddle {
@@ -70,12 +174,12 @@ body {
   }
   a .follow {
     background-color: transparent;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border-color: #ffffff;
     color: #ffffff;
     width: 152px;
     height: 47px;
-    font-size: 30px;
+    font-size: 24px;
   }
   .red {
     text-decoration: none;
@@ -86,7 +190,7 @@ body {
     color: white;
     background-color: #952525;
     border: none;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     width: 152px;
     height: 47px;
   }
@@ -158,21 +262,28 @@ body {
   /* ------------------- middle earth ----------------------------------------- */
   /* --------------------- bottom middle ------------------------------------ */
   /* section is for the album and songs */
+  #working{
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-top: 20%;
+  }
   #rotate{
     transform: rotate(45deg);
     position: absolute;
-    bottom: 130px;
-    left: 600px;
+    /* bottom: 50%;
+    top: 50%;
+    left: 37%; */
   }
-  #working{
-    position: relative;
-  }
+
+  
   
   /* -------------------- picture middle -------------------------------------- */
   /* gallery */
   #gallery{
     margin: 15% auto 2% 2%;
     font-size: 50px;
+    color: #424242;
   }
   
   /* --------------------- bottom section ------------------------------------ */
@@ -180,26 +291,25 @@ body {
     /* background-image: url(./images/bottom.png); */
     background-repeat: no-repeat;
   }
-  #bottom h1 {
+  /* #bottom h1 {
     font-weight: lighter;
     font-size: 50px;
     margin: auto auto 15% 5%;
     padding-top: 5%;
-  }
+  } */
   #circle {
     font-size: 10px;
   }
   #bottom h2 {
     font-size: 50px;
     font-weight: lighter;
-    margin-left: 5%;
   }
-  #bottom p {
+  /* #bottom p {
     font-size: 35px;
-    margin-left: 5%;
-    margin-top: -2.5%;
+  } */
+  .under{
+    text-decoration: underline;
+    color: #424242;
   }
-  .med {
-    margin: 5% auto 5% 5%;
-  }
+  
   

@@ -43,17 +43,17 @@
             <h1>Nathan Strubhart</h1>
             <p>Nathan Strubhart Bombastic rhythm and acoustic blues, Nathan Strubhart, armed with soulful grooves and piercing lyrical ammo all fired off with a wink 
                 and a shot of whisky. The tunesmith seesaws from deft songwriting craftsman in the studio to effortless showman on the stage. His tempo and key changes 
-                keep you guessing, while the melodic prose will keep you hooked...</p>
+                keep you guessing, while the melodic prose will keep you hooked.</p>
             <!-- does this button expand or does it take you elsewhere -->
-            <button id="readmore">READ MORE</button>
+            <!-- <button id="readmore">READ MORE</button> -->
         </div>
         <!-- slight info on what the artist does -->
         <div id="middleEarth">
             <h1>Music Production</h1>
             <p>I produce music for artists and content creators on YouTube as well as offer recording services.</p>
-            <p id="link">You can hear my instrumental work <a href="https://www.youtube.com/channel/UCKkA-aQogQivoZidvneaZUw" class="red">here</a>.</p>
+            <p id="link">You can hear my instrumental work <a href="https://www.youtube.com/channel/UCKkA-aQogQivoZidvneaZUw" target="_blank" class="red">here</a>.</p>
             <!-- this will be a video put i just have a image for now -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8cZc8N4b-DE" frameborder="0" 
+            <iframe src="https://www.youtube.com/embed/8cZc8N4b-DE" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         
@@ -62,16 +62,16 @@
         <div id="bottomMiddle">
             <div id="working">
             <img src="./images/album.png" alt="Album Cover" id="album">
-            <p id="rotate">COMING SOON</p><!-- THIS SITS ON TOP OF THE ALBUM COVER -->
+            <div id="rotate">COMING SOON</div><!-- THIS SITS ON TOP OF THE ALBUM COVER -->
             </div>
-            <a href="" target="_blank"><button class="buy">Buy Album</button></a>
+            
             <div class="songs" id="song1">
                 <button class="pressplay"><img src="./images/play.png" alt="PlayButton"></button>
                 <!-- will this light up of be darker or lighter as the song progresses -->
                 <img class="progress desktoppro" src="./images/progress.png" alt="">
                 <img class="progress mobilepro" src="./images/mobileview.png" alt="">
                 <p id="artist">Nathan Strubhart</p>
-                <p id="songtitle">"Creep"</p>
+                <p id="songtitle">"Won't Get Done"</p>
             </div>
             <div class="songs" id="song2">
                 <button class="pressplay"><img src="./images/play.png" alt="PlayButton"></button>
@@ -79,11 +79,12 @@
                 <img class="progress desktoppro" src="./images/progress.png" alt="">
                 <img class="progress mobilepro" src="./images/mobileview.png" alt="">
                 <p id="artist">Nathan Strubhart</p>
-                <p id="songtitle">"Lemonhead"</p>
-                <audio src="./music/Hawaii.mp3" controls></audio>
+                <p id="songtitle">"Hawaii"</p>
+                <!-- <audio src="./music/Hawaii.mp3" controls></audio>
                 <audio src="./music/Won't Get Done.mp3" controls></audio>
-                <audio src="./music/Home (newest version).mp3" controls></audio>
+                <audio src="./music/Home (newest version).mp3" controls></audio> -->
             </div>
+            <a href="" target="_blank" id="buyBottom"><button class="buy">Buy Album</button></a>
         </div>
         <!-- this section is only for pictures -->
         <p id="gallery">Gallery</p>
@@ -96,18 +97,19 @@
         <!--  bottom section -->
         <div id="bottom">
             <!-- is this a list of things and therefor only a h1 tag or are they different things to click on? -->
-            <h1>Booking   Requests  Project Ideas</h1>
-            <h2>Nathan Strubhart</h2>
-            <p>Austin, Tx.</p>
+            <h1>Booking   Requests  Projects</h1>
+            <h2 class="naming"><span id="firstly">Nathan </span><br><span id="lastly">Strubhart</span></h2>
+            <p class="local">Austin, Tx.</p>
+            <a href="" target="_blank"><button class="follow">Subscribe</button></a>
             <div id="bottomMed">
-                <p>Contact Me</p>
+                <p class="under">Contact Me</p>
                 <a href="" target="_blank"><img src="./images/email.png" class="med" alt="Email"></a>
-                <p>Follow Me</p>
+                <p class="under">Follow Me</p>
                 <a href="" target="_blank"><img src="./images/youtube.png" class="med" alt="Youtube"></a>
                 <a href="" target="_blank"><img src="./images/instagram.png" class="med" alt="Instagram"></a>
                 <a href="" target="_blank"><img src="./images/facebook.png" class="med" alt="Facebook"></a>
             </div>
-            <a href="" target="_blank"><button class="follow">Follow</button></a>
+            
         </div>
     </div>
 </body>

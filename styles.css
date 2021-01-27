@@ -50,7 +50,7 @@
   }
   /*------------------------- middleEarth--------------------------- */
   iframe {
-    width: 350px;
+    width: 150px;
     margin: 10% auto 20% 15%;
   }
   #middleEarth h1 {
@@ -281,15 +281,15 @@ a .follow {
 #topMiddle p {
   grid-area: para;
 }
-#readmore {
+/* #readmore {
   grid-area: readmore;
   text-transform: uppercase;
   color: #ff0000;
   background-color: transparent;
   border: none;
-}
+} */
 /* ------------------- middle earth ----------------------------------------- */
-#middleEarth h1 {
+/* #middleEarth h1 {
   grid-area: music;
 }
 #middleEarth p {
@@ -300,7 +300,7 @@ a .follow {
 }
 #video {
   grid-area: video;
-}
+} */
 
 /* -------------------- picture middle -------------------------------------- */
 /* #pictureMiddle {
