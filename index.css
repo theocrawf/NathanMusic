@@ -1,5 +1,5 @@
 /* mobile view */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   /* this is the progress bar of the song */
   .desktoppro {
     display: none;
@@ -111,7 +111,7 @@
   }
 }
 /* ----------------------------desktop view----------------------------- */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 750px) {
   /* this is the progress bar of the song */
   .mobilepro {
     display: none;
@@ -124,28 +124,61 @@
   }
   /* top middle section */
   #topMiddle {
-    display: flex;
-    margin: auto 5% 15% 5%;
-    padding-top: 15%;
-  }
-  #topMiddle h1 {
-    display: flex;
-    align-self: stretch;
-    background-color: #ff0000;
-  }
-  #topMiddle p {
-    justify-content: space-around;
-    align-self: flex-end;
-    background-color: #ff0000;
+    display: grid;
+    grid-template-areas:
+      "pic nathan"
+      "pic para"
+      "pic para";
+    margin: auto 5% 20% 5%;
+    padding-top: 10%;
   }
   #nate {
-    width: 400px;
+    width: 500px;
+    grid-area: pic;
   }
+  
+  #topMiddle h1 {
+    grid-area: nathan;
+    margin: 2% auto auto 15%;
+    font-size: 50px;
+    text-align: left;
+  }
+  #topMiddle p {
+   grid-area: para;
+   margin: 1% 5% auto 15% ;
+   font-size: 25px;
+  }
+  
 
   /* middleEarth/ youtube section */
+  
+  #middleEarth {
+    display: grid;
+    grid-template-areas:
+      "music video"
+      "p video"
+      "link video";
+      margin: 20% 5% 10% 10%;
+  }
+  
   iframe {
-    width: 560px;
+    width: 600px;
     height: 315px;
+    grid-area: video;
+    margin: 10% auto ;
+  }
+  #middleEarth h1{
+    grid-area: music;
+    font-size: 50px;
+  }
+  #middleEarth p {
+    margin: auto;
+    font-size: 32px;
+    grid-area: p;
+  }
+  #middleEarth #link {
+    margin: 10% auto auto 0%;
+    grid-area: link;
   }
   /* album section/ bottom middle */
   #album {
@@ -170,7 +203,34 @@
   #pictureMiddle img {
     width: 450px;
   }
+/* bottom section/ contact */
+#bottom h1 {
+  font-weight: lighter;
+  font-size: 38px;
+  margin: 20% auto 15% 5%;
+  padding-top: 5%;
+  word-spacing: 100px;
 }
+.med {
+  margin: auto auto 5% 5%;
+}
+.under {
+  margin-left: 5%;
+  font-size: 24px;
+}
+.naming{
+  margin-left: 5%;
+}
+#firstly{
+  font-size: 75px;
+  margin-left: 5%;
+}
+/* perhaps use em to make different size for screen size as well as iframe */
+#lastly{
+  font-size: 175px;
+}
+}
+
 /* ----------------------------outside media queries-------------------- */
 
 body {
@@ -217,28 +277,7 @@ a .follow {
   background-image: url(./images/nathan1.png);
 }
 
-#firstname {
-}
 
-#top .pressplay {
-}
-#top .progress {
-}
-#covermusic p {
-}
-#top h2 {
-}
-#lastname {
-}
-#top p {
-}
-#top .buy {
-}
-#top .follow {
-}
-
-#socialmedia {
-}
 #socialmedia img {
   width: 50px;
 }
@@ -246,19 +285,9 @@ a .follow {
   margin: auto 5% auto 5%;
 }
 /* -------------------- middle section ------------------------------------- */
-/* #middle {
-    background-image: url(./images/background.png);
-    background-color: black;
-    background-repeat: no-repeat;
-  } */
+
 /* --------------------- top middle ---------------------------------------- */
-#topMiddle img {
-  /* width: 500px; */
-}
-#topMiddle h1 {
-}
-#topMiddle p {
-}
+
 #readmore {
   text-transform: uppercase;
   color: #ff0000;
@@ -266,20 +295,20 @@ a .follow {
   border: none;
 }
 /* ------------------- middle earth ----------------------------------------- */
+
+
 /* --------------------- bottom middle ------------------------------------ */
 /* section is for the album and songs */
 #working {
   position: relative;
   text-align: center;
-  display: block;
+  display: block; 
   margin-top: 20%;
 }
 #rotate {
   transform: rotate(45deg);
   position: absolute;
-  /* bottom: 50%;
-    top: 50%;
-    left: 37%; */
+ 
 }
 
 /* -------------------- picture middle -------------------------------------- */
@@ -295,12 +324,7 @@ a .follow {
   /* background-image: url(./images/bottom.png); */
   background-repeat: no-repeat;
 }
-/* #bottom h1 {
-    font-weight: lighter;
-    font-size: 50px;
-    margin: auto auto 15% 5%;
-    padding-top: 5%;
-  } */
+
 #circle {
   font-size: 10px;
 }
@@ -308,9 +332,6 @@ a .follow {
   font-size: 50px;
   font-weight: lighter;
 }
-/* #bottom p {
-    font-size: 35px;
-  } */
 .under {
   text-decoration: underline;
   color: #424242;
