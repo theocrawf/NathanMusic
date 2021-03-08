@@ -162,8 +162,8 @@
   }
   
   iframe {
-    width: 600px;
-    height: 315px;
+    width: 650px;
+    height: 355px;
     grid-area: video;
     margin: 10% auto ;
   }
@@ -172,7 +172,7 @@
     font-size: 50px;
   }
   #middleEarth p {
-    margin: auto;
+    margin: auto auto auto 0%;
     font-size: 32px;
     grid-area: p;
   }
@@ -181,16 +181,22 @@
     grid-area: link;
   }
   /* album section/ bottom middle */
+  #bottomMiddle {
+    display: grid;
+    
+  }
   #album {
     width: 650px;
     display: block;
-    margin: 15% auto 5% auto;
+    margin-left: 10%;
   }
   #rotate {
     font-size: 100px;
     bottom: 40%;
-    left: 25%;
-    right: 25%;
+    left: 10%;
+  }
+  .songs {
+    /* display: flex; */
   }
   /* gallery section/ picture middle */
   #pictureMiddle {
@@ -302,7 +308,7 @@ a .follow {
 #working {
   position: relative;
   text-align: center;
-  display: block; 
+  /* display: block;  */
   margin-top: 20%;
 }
 #rotate {
