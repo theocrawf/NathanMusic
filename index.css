@@ -1,4 +1,11 @@
+*{
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid #ff0000; */
+}
 /* mobile view */
+
 @media only screen and (max-width: 750px) {
   /* this is the progress bar of the song */
   .desktoppro {
@@ -112,9 +119,30 @@
 }
 /* ----------------------------desktop view----------------------------- */
 @media only screen and (min-width: 750px) {
+  #top {
+    background-image: url(./images/nathan1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:auto;
+    padding-top: 5%;
+  }
+  /* cover of the week */
+  #top > h2{
+    margin-left: 80%;
+  }
+  #covermusic{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
   /* this is the progress bar of the song */
   .mobilepro {
     display: none;
+  }
+  /* social media section on top */
+  #socialmedia{
+    display: flex;
+    justify-content: center;
   }
   /* for entire middle section */
   #middle {
@@ -279,9 +307,6 @@ a .follow {
   height: 47px;
 }
 /* ------------------- top section ----------------------------------------- */
-#top {
-  background-image: url(./images/nathan1.png);
-}
 
 
 #socialmedia img {
