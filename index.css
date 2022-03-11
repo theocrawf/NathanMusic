@@ -5,7 +5,6 @@
     /* border: 1px solid #ff0000; */
 }
 /* mobile view */
-
 @media only screen and (max-width: 750px) {
   /* this is the progress bar of the song */
   .desktoppro {
@@ -124,25 +123,75 @@
     background-repeat: no-repeat;
     background-size: cover;
     height:auto;
-    padding-top: 5%;
+    padding: 2%;
   }
   /* cover of the week */
   #top > h2{
-    margin-left: 80%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 40px;
+    font-weight: 100;
+    margin: auto 10% 2% auto;
   }
   #covermusic{
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
+  /* progress bar for all music on page desktop view */
+  .desktoppro{
+    margin: 20px;
+  }
+  /* artist info */
+  .artistinfo{
+    font-size: 24px;
+    color: #ABABAB;
+  }
+  #coverartist{
+    margin-bottom: 3%;
+  }
   /* this is the progress bar of the song */
   .mobilepro {
     display: none;
+  }
+  /* name section */
+  #topSectionName{
+    display: flex;
+    margin-top: 15%;
+  }
+  #firstname{
+    font-size: 96px;
+    margin-right: 10%;
+    margin-left: 10%;
+    letter-spacing: 20px;
+  }
+  #lastname{
+    font-size: 250px;
+    margin-left: -15%;
+  }
+  /* comming soon */
+  #comingSoonSectionTop{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #soon{
+    margin: 50% 60% auto auto;
+    font-weight: 100;
+    font-size: 24px;
+  }
+  /* album and subscribe buttons */
+  #callToAction{
+    display: flex;
+    margin: 0 10% 0 auto;
+  }
+  .topbutton{
+    margin-left: 20px;
   }
   /* social media section on top */
   #socialmedia{
     display: flex;
     justify-content: center;
+    margin-top: 8%;
   }
   /* for entire middle section */
   #middle {
@@ -210,21 +259,32 @@
   }
   /* album section/ bottom middle */
   #bottomMiddle {
-    display: grid;
-    
+    display: flex;
+    flex-wrap: wrap;
   }
   #album {
     width: 650px;
-    display: block;
-    margin-left: 10%;
+    /* display: block; */
+    margin-left: 35%;
   }
-  #rotate {
+  #working{
+     margin-right: 30%;
+  }
+  /* this is for coming soon words that sit on album cover */
+  /* #rotate {
     font-size: 100px;
     bottom: 40%;
     left: 10%;
-  }
+  } */
+  
   .songs {
-    /* display: flex; */
+    display: flex;
+    margin-top: 15%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  #buyBottom{
+    margin-top: 15%;
   }
   /* gallery section/ picture middle */
   #pictureMiddle {
@@ -245,11 +305,10 @@
   padding-top: 5%;
   word-spacing: 100px;
 }
-.med {
-  margin: auto auto 5% 5%;
-}
+
 .under {
-  margin-left: 5%;
+  margin-left: 10%;
+  margin-bottom: 10%;
   font-size: 24px;
 }
 .naming{
@@ -263,15 +322,24 @@
 #lastly{
   font-size: 175px;
 }
+#contacting{
+  display: flex;
+}
+#socMedia{
+  border: 1px solid red;
+}
+#bottomMed{
+  padding-right: 20%;
+  border: 1px solid red;
+}
+.med{
+}
 }
 
 /* ----------------------------outside media queries-------------------- */
 
 body {
-  margin: 0;
   color: #ffffff;
-  margin: 0%;
-  padding: 0%;
   font-family: "Roboto", sans-serif;
 }
 .pressplay {
@@ -289,8 +357,7 @@ a .follow {
   /* border-radius: 10px; */
   border-color: #ffffff;
   color: #ffffff;
-  width: 152px;
-  height: 47px;
+  padding: 15px 32px;
   font-size: 24px;
 }
 .red {
@@ -298,13 +365,12 @@ a .follow {
   color: #952525;
 }
 .buy {
-  font-size: 25px;
+  font-size: 24px;
   color: white;
   background-color: #952525;
   border: none;
   /* border-radius: 10px; */
-  width: 152px;
-  height: 47px;
+  padding: 15px 32px;
 }
 /* ------------------- top section ----------------------------------------- */
 
@@ -331,16 +397,16 @@ a .follow {
 /* --------------------- bottom middle ------------------------------------ */
 /* section is for the album and songs */
 #working {
-  position: relative;
+  /* position: relative; */
   text-align: center;
   /* display: block;  */
-  margin-top: 20%;
+  /* margin-top: 20%; */
 }
-#rotate {
+/* #rotate {
   transform: rotate(45deg);
   position: absolute;
  
-}
+} */
 
 /* -------------------- picture middle -------------------------------------- */
 /* gallery */

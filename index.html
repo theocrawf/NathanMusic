@@ -21,15 +21,21 @@
             <!-- will this light up of be darker or lighter as the song progresses -->
             <img class="progress desktoppro" src="./images/progress.png" alt="">
             <img class="progress mobilepro" src="./images/mobileview.png" alt="">
-            <p id="coverartist">Nathan Strubhart</p>
-            <p id="coversongtitle">"Home"</p>
+            <div class="artistinfo">
+                <p id="coverartist">Nathan Strubhart</p>
+                <p id="coversongtitle">"Home"</p>
+            </div>
         </div>
-        <h1 id="firstname">Nathan <br> <span id="lastname">Strubhart</span></h1>
-        <div id="soon">
-        <p>Coming Soon!</p>
-        <a href="" target="_blank"><button class="buy">Buy Album</button></a>
+        <div id="topSectionName">
+            <h1 id="firstname">Nathan <br> <span id="lastname">Strubhart</span></h1>
+            <div id="comingSoonSectionTop">
+                <p id="soon">Coming Soon!</p>
+               
+                    <a href="" target="_blank" class="topbutton"><button class="buy">Buy Album</button></a>
+                    <a href="" target="_blank" class="topbutton"><button class="follow">Subscirbe</button></a>
+                
+            </div>
         </div>
-        <a href="" target="_blank"><button class="follow">Subscirbe</button></a>
         <div id="socialmedia">
         <a href="" target="_blank"><img src="./images/youtube.png" alt="Youtube"></a>
         <a href="" target="_blank" id="insta"><img src="./images/instagram.png" alt="Instagram"></a>
@@ -62,29 +68,34 @@
         <div id="bottomMiddle">
             <div id="working">
             <img src="./images/album.png" alt="Album Cover" id="album">
-            <div id="rotate">COMING SOON</div><!-- THIS SITS ON TOP OF THE ALBUM COVER -->
+           <!-- <div id="rotate">COMING SOON</div> --> <!-- THIS SITS ON TOP OF THE ALBUM COVER -->
             </div>
-            
-            <div class="songs" id="song1">
-                <button class="pressplay"><img src="./images/play.png" alt="PlayButton"></button>
-                <!-- will this light up of be darker or lighter as the song progresses -->
-                <img class="progress desktoppro" src="./images/progress.png" alt="">
-                <img class="progress mobilepro" src="./images/mobileview.png" alt="">
-                <p id="artist">Nathan Strubhart</p>
-                <p id="songtitle">"Won't Get Done"</p>
+            <div id="buyAlbum">
+                <div class="songs" id="song1">
+                    <button class="pressplay"><img src="./images/play.png" alt="PlayButton"></button>
+                    <!-- will this light up of be darker or lighter as the song progresses -->
+                    <img class="progress desktoppro" src="./images/progress.png" alt="">
+                    <img class="progress mobilepro" src="./images/mobileview.png" alt="">
+                    <div class="artistinfo">
+                        <p id="artist">Nathan Strubhart</p>
+                        <p id="songtitle">"Won't Get Done"</p>
+                    </div>
+                </div>
+                <div class="songs" id="song2">
+                    <button class="pressplay"><img src="./images/play.png" alt="PlayButton"></button>
+                    <!-- will this light up of be darker or lighter as the song progresses -->
+                    <img class="progress desktoppro" src="./images/progress.png" alt="">
+                    <img class="progress mobilepro" src="./images/mobileview.png" alt="">
+                    <div class="artistinfo">
+                        <p id="artist">Nathan Strubhart</p>
+                        <p id="songtitle">"Hawaii"</p>
+                        <!-- <audio src="./music/Hawaii.mp3" controls></audio>
+                        <audio src="./music/Won't Get Done.mp3" controls></audio>
+                        <audio src="./music/Home (newest version).mp3" controls></audio> -->
+                    </div>
+                </div>
+                <a href="" target="_blank"><button  id="buyBottom" class="buy">Buy Album</button></a>
             </div>
-            <div class="songs" id="song2">
-                <button class="pressplay"><img src="./images/play.png" alt="PlayButton"></button>
-                <!-- will this light up of be darker or lighter as the song progresses -->
-                <img class="progress desktoppro" src="./images/progress.png" alt="">
-                <img class="progress mobilepro" src="./images/mobileview.png" alt="">
-                <p id="artist">Nathan Strubhart</p>
-                <p id="songtitle">"Hawaii"</p>
-                <!-- <audio src="./music/Hawaii.mp3" controls></audio>
-                <audio src="./music/Won't Get Done.mp3" controls></audio>
-                <audio src="./music/Home (newest version).mp3" controls></audio> -->
-            </div>
-            <a href="" target="_blank" id="buyBottom"><button class="buy">Buy Album</button></a>
         </div>
         <!-- this section is only for pictures -->
         <p id="gallery">Gallery</p>
@@ -99,17 +110,20 @@
             <!-- is this a list of things and therefor only a h1 tag or are they different things to click on? -->
             <h1>Booking   Requests  Projects</h1>
             <h2 class="naming"><span id="firstly">Nathan </span><br><span id="lastly">Strubhart</span></h2>
-            <p class="local">Austin, Tx.</p>
-            <a href="" target="_blank"><button class="follow">Subscribe</button></a>
-            <div id="bottomMed">
-                <p class="under">Contact Me</p>
-                <a href="" target="_blank"><img src="./images/email.png" class="med" alt="Email"></a>
-                <p class="under">Follow Me</p>
-                <a href="" target="_blank"><img src="./images/youtube.png" class="med" alt="Youtube"></a>
-                <a href="" target="_blank"><img src="./images/instagram.png" class="med" alt="Instagram"></a>
-                <a href="" target="_blank"><img src="./images/facebook.png" class="med" alt="Facebook"></a>
-            </div>
-            
+            <div id="contacting">
+                <div id="bottomMed">
+                    <p class="under">Contact Me</p>
+                    <a href="" target="_blank"><img src="./images/email.png" class="med" alt="Email"></a>
+                    <p class="under">Follow Me</p>
+                    <div id="socMedia">
+                        <a href="" target="_blank"><img src="./images/youtube.png" class="med" alt="Youtube"></a>
+                        <a href="" target="_blank"><img src="./images/instagram.png" class="med" alt="Instagram"></a>
+                        <a href="" target="_blank"><img src="./images/facebook.png" class="med" alt="Facebook"></a>
+                    </div>
+                </div>
+                <p class="local">Austin, Tx.</p>
+                <a href="" target="_blank"><button class="follow">Subscribe</button></a>
+            </div>            
         </div>
     </div>
 </body>
