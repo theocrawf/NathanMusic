@@ -140,16 +140,16 @@
     justify-content: flex-end;
   }
   /* progress bar for all music on page desktop view */
-  .desktoppro{
-    margin: 20px;
-    width: 12vw;
+  #top .desktoppro{
+    margin: 10px;
+    width: 9vw;
   }
   .playButton{
     width: 2.5vw;
   }
   /* artist info */
   .artistinfo{
-    font-size: 1vw;
+    font-size: 1.25vw;
     color: #ABABAB;
   }
   #coverartist{
@@ -165,9 +165,9 @@
     margin-top: 15%;
   }
   #firstname{
-    font-size: 4vw;
-    margin-right: 10%;
-    margin-left: 10%;
+    font-size: 3.5vw;
+    margin-right: 5%;
+    margin-left: 12%;
     letter-spacing: 20px;
   }
   #lastname{
@@ -180,20 +180,20 @@
     flex-wrap: wrap;
   }
   #soon{
-    margin: 4vh 40% auto auto;
+    margin: 4vh 50% auto auto;
     font-weight: 100;
-    font-size: 24px;
+    font-size: 12px;
   }
   .buy{
-    padding: 1vw 1vh;
-    font-size: 18px;
+    padding: .5vw .5vh;
+    font-size: 12px;
   }
   .follow{
-    padding: .9vw 1vh;
-    font-size: 18px;
+    padding: .4vw .5vh;
+    font-size: 12px;
   }
   .topbutton{
-    margin-left: 20px;
+    margin-left: 10px;
   }
   
   /* social media section on top */
@@ -203,7 +203,7 @@
     margin-top: 8%;
   }
   #socialmedia img{
-    width: 35px;
+    width: 25px;
   }
   /* for entire middle section */
   #middle {
@@ -282,6 +282,10 @@
   #working{
      margin-right: 30%;
   }
+  .desktoppro{
+      margin: 20px;
+      width: 12vw;
+    }
   /* this is for coming soon words that sit on album cover */
   /* #rotate {
     font-size: 100px;
@@ -323,8 +327,9 @@
   font-size: 24px;
 }
 .naming{
-  margin-left: 5%;
+  /* margin-left: 5%; */
   font-size: 5vw;
+  margin: 15% auto 10% 5%;
 }
 #firstly{
   margin-left: 5%;
@@ -340,7 +345,7 @@
 }
 
 #bottomMed{
-  width: 500px;
+  width: 350px;
 }
 #subscribing{
   align-self: center;
@@ -348,6 +353,7 @@
 }
 .med{
   margin: auto auto 10% 10%;
+  width: 25px;
 }
 }
 
