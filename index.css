@@ -6,6 +6,14 @@
 }
 /* mobile view */
 @media only screen and (max-width: 600px) {
+  #top {
+    background-image: url(./images/nathan1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%; */
+    height:auto;
+    padding: 2%;
+  }  
   /* this is the progress bar of the song */
   .desktoppro {
     display: none;
