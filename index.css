@@ -21,6 +21,9 @@
     margin: auto 10% 5% auto;
 
   }
+  .pauseButton{
+    width: 25px;
+  }
   #covermusic{
     display: flex;
     align-items: center;
@@ -280,7 +283,7 @@
     margin: 10px;
     width: 9vw;
   }
-  .playButton{
+  .playButton, .pauseButton{
     width: 2.5vw;
   }
   /* artist info */
@@ -609,6 +612,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .pressplay {
+  background-color: transparent;
+  border: none;
+}
+.presspause{
   background-color: transparent;
   border: none;
 }

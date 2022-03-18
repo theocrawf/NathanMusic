@@ -1,7 +1,5 @@
-// const play = () => {
-//     const audio = document.getElementById('home');
-//     audio.play();
-// }
+// mp3 player section
+
 
 
 // gallery section
