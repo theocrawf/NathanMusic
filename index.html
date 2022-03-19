@@ -17,8 +17,9 @@
         <h2>Cover of the Week!</h2>
         <div id="covermusic">
             <!-- need to get a pause button as well for when we push play it changes to pause and when you press it for pause it changes to play -->
-            <button class="pressplay" id="homePlay" onclick="play('Home.mp3')"><img src="./images/play.png" alt="PlayButton" class="playButton"></button>
-            <button class="presspause" id="homePause" onclick="pause('Home.mp3')"><img src="./images/pause.png" alt="PauseButton" class="pauseButton"></button>
+            <button class="pressplay" onclick="play()" id="homePlay"><img src="./images/play.png" alt="PlayButton" class="playButton"></button>
+            <button class="presspause" onclick="play()" id="homePause"><img src="./images/pause.png" alt="PauseButton" class="pauseButton"></button>
+            <audio id="audioHome" src="./music/Home.mp3"></audio>
             <!-- will this light up of be darker or lighter as the song progresses -->
             <img class="progress desktoppro" src="./images/progress.png" alt="">
             <img class="progress mobilepro" src="./images/mobileview.png" alt="">
@@ -71,9 +72,9 @@
             </div>
             <div id="buyAlbum">
                 <div class="songs" id="song1">
-                    <button class="pressplay" id="wontPlay" onclick="play('Won\'t Get Done.mp3')"><img src="./images/play.png" alt="PlayButton" class="playButton"></button>
-                    <button class="presspause" id="wontPause" onclick="pause('Won\'t Get Done.mp3')"><img src="./images/pause.png" alt="PauseButton" class="pauseButton"></button>
-                    <audio src="./music/Won't Get Done.mp3"></audio>
+                    <button class="pressplay" onclick="playWont()" id="wontPlay"><img src="./images/play.png" alt="PlayButton" class="playButton"></button>
+                    <button class="presspause" onclick="playWont()" id="wontPause"><img src="./images/pause.png" alt="PauseButton" class="pauseButton"></button>
+                    <audio id="audioWont" src="./music/Won't Get Done.mp3"></audio>
                     <!-- will this light up of be darker or lighter as the song progresses -->
                     <img class="progress desktoppro" src="./images/progress.png" alt="">
                     <img class="progress mobilepro" src="./images/mobileview.png" alt="">
@@ -83,18 +84,15 @@
                     </div>
                 </div>
                 <div class="songs" id="song2">
-                    <button class="pressplay" id="hawaiiPlay" onclick="play('Hawaii.mp3')"><img src="./images/play.png" alt="PlayButton" class="playButton"></button>
-                    <button class="presspause" id="hawaiiPause" onclick="pause('Hawaii.mp3')"><img src="./images/pause.png" alt="PauseButton" class="pauseButton"></button>
+                    <button class="pressplay" onclick="playHawaii()" id="hawaiiPlay"><img src="./images/play.png" alt="PlayButton" class="playButton"></button>
+                    <button class="presspause" onclick="playHawaii()" id="hawaiiPause"><img src="./images/pause.png" alt="PauseButton" class="pauseButton"></button>
                     <!-- will this light up of be darker or lighter as the song progresses -->
-                    <audio src="./music/Hawaii.mp3"></audio>
+                    <audio id="audioHawaii" src="./music/Hawaii.mp3"></audio>
                     <img class="progress desktoppro" src="./images/progress.png" alt="">
                     <img class="progress mobilepro" src="./images/mobileview.png" alt="">
                     <div class="artistinfo">
                         <p id="artist">Nathan Strubhart</p>
                         <p id="songtitle">"Hawaii"</p>
-                        <!-- <audio src="./music/Hawaii.mp3" controls></audio>
-                        <audio src="./music/Won't Get Done.mp3" controls></audio>
-                        <audio src="./music/Home (newest version).mp3" controls></audio> -->
                     </div>
                 </div>
                 <a href="" target="_blank"><button  id="buyBottom" class="buy">Buy Album</button></a>
