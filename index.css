@@ -21,6 +21,7 @@
     margin: auto 10% 5% auto;
 
   }
+  
   .pauseButton{
     width: 25px;
   }
@@ -29,6 +30,9 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 50%;
+  }
+  #covermobilepro{
+    margin-bottom: 6%;
   }
   #coverartist, #coversongtitle{
     font-size: 4vw;

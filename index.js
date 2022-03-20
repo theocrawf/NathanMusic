@@ -17,6 +17,7 @@ const removePause = homePause.style.display = "none";
 const removeWontPause = wontPause.style.display = "none";
 const removeHawaiiPause = hawaiiPause.style.display = "none";
 
+
 // home play and pause function
 function play(){
   const audio = document.getElementById('audioHome');
