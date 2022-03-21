@@ -20,9 +20,9 @@
             <button class="pressplay" onclick="play()" id="homePlay"><img src="./images/play.png" alt="PlayButton" class="playButton"></button>
             <button class="presspause" onclick="play()" id="homePause"><img src="./images/pause.png" alt="PauseButton" class="pauseButton"></button>
             <audio id="audioHome" src="./music/Home.mp3"></audio>
-            <!-- will this light up of be darker or lighter as the song progresses -->
-            <img class="progress desktoppro" src="./images/progress.png" alt="">
-            <img class="progress mobilepro" id="covermobilepro" src="./images/mobileview.png" alt="">
+            <div class="mobilepro">
+                <div class="progress"></div>
+            </div>
             <div class="artistinfo">
                 <p id="coverartist">Nathan Strubhart</p>
                 <p id="coversongtitle">"Home"</p>
@@ -75,9 +75,9 @@
                     <button class="pressplay" onclick="playWont()" id="wontPlay"><img src="./images/play.png" alt="PlayButton" class="playButton"></button>
                     <button class="presspause" onclick="playWont()" id="wontPause"><img src="./images/pause.png" alt="PauseButton" class="pauseButton"></button>
                     <audio id="audioWont" src="./music/Won't Get Done.mp3"></audio>
-                    <!-- will this light up of be darker or lighter as the song progresses -->
-                    <img class="progress desktoppro" src="./images/progress.png" alt="">
-                    <img class="progress mobilepro" src="./images/mobileview.png" alt="">
+                    <div class="mobileProgressWont">
+                        <div class="progressWont"></div>
+                    </div>
                     <div class="artistinfo">
                         <p id="artist">Nathan Strubhart</p>
                         <p id="songtitle">"Won't Get Done"</p>
@@ -86,10 +86,10 @@
                 <div class="songs" id="song2">
                     <button class="pressplay" onclick="playHawaii()" id="hawaiiPlay"><img src="./images/play.png" alt="PlayButton" class="playButton"></button>
                     <button class="presspause" onclick="playHawaii()" id="hawaiiPause"><img src="./images/pause.png" alt="PauseButton" class="pauseButton"></button>
-                    <!-- will this light up of be darker or lighter as the song progresses -->
                     <audio id="audioHawaii" src="./music/Hawaii.mp3"></audio>
-                    <img class="progress desktoppro" src="./images/progress.png" alt="">
-                    <img class="progress mobilepro" src="./images/mobileview.png" alt="">
+                    <div class="mobileProgressHawaii">
+                        <div class="progressHawaii"></div>
+                    </div>
                     <div class="artistinfo">
                         <p id="artist">Nathan Strubhart</p>
                         <p id="songtitle">"Hawaii"</p>

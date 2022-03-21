@@ -21,7 +21,19 @@
     margin: auto 10% 5% auto;
 
   }
-  
+  .mobilepro {
+    margin: auto 5%;
+    width: 25vw;
+    height: 3px;
+    background-color: #585858;
+    position: relative;
+  }
+  .progress{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
   .pauseButton{
     width: 25px;
   }
@@ -154,16 +166,32 @@
   .playButton{
     width: 25px;
   }
-  
-  .mobilepro {
-    /* height: 5px; */
+  /* wont get done song progress */
+  .mobileProgressWont {
+    margin: auto 5%;
     width: 25vw;
-    margin: 6% 5% auto 5%;
+    height: 3px;
+    background-color: #585858;
+    position: relative;
   }
-  /* #song1,
-  #song2 {
-    margin: 5%;
-  } */
+  .progressWont{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  /* hawaii song progress */
+  .mobileProgressHawaii {
+    margin: auto 5%;
+    width: 25vw;
+    height: 3px;
+    background-color: #585858;
+    position: relative;
+  }
+  .progressHawaii{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
 
   /* picture middle/ gallery */
   #pictureMiddle {
@@ -282,10 +310,18 @@
     align-items: center;
     justify-content: flex-end;
   }
-  /* progress bar for all music on page desktop view */
-  #top .desktoppro{
-    margin: 10px;
-    width: 9vw;
+  
+  .mobilepro {
+    margin: auto 2%;
+    width: 15vw;
+    height: 3px;
+    background-color: #585858;
+    position: relative;
+  }
+  .progress{
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
   .playButton, .pauseButton{
     width: 2.5vw;
@@ -299,9 +335,7 @@
     margin-bottom: 3%;
   }
   /* this is the progress bar of the song */
-  .mobilepro {
-    display: none;
-  }
+  
   /* name section */
   #topSectionName{
     display: flex;
@@ -418,10 +452,32 @@
   #working{
      margin-right: 30%;
   }
-  .desktoppro{
-      margin: 20px;
-      width: 12vw;
-    }
+  /* wont get done song progress */
+  .mobileProgressWont {
+    margin: auto 5%;
+    width: 25vw;
+    height: 3px;
+    background-color: #585858;
+    position: relative;
+  }
+  .progressWont{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  /* hawaii song progress */
+  .mobileProgressHawaii {
+    margin: auto 5%;
+    width: 25vw;
+    height: 3px;
+    background-color: #585858;
+    position: relative;
+  }
+  .progressHawaii{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
   /* this is for coming soon words that sit on album cover */
   /* #rotate {
     font-size: 100px;

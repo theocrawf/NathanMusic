@@ -16,6 +16,57 @@ const audioHawaii = document.querySelector('#audioHawaii');
 const removePause = homePause.style.display = "none";
 const removeWontPause = wontPause.style.display = "none";
 const removeHawaiiPause = hawaiiPause.style.display = "none";
+//progress bar for coversong
+const progress = document.querySelector('.progress');
+const mobileProgress = document.querySelector('.mobilepro');
+//progress bar for wont get done song
+const progressWont = document.querySelector('.progressWont');
+const mobileProgressWont = document.querySelector('.mobileProgressWont');
+// progress bar for hawaii song
+const progressHawaii = document.querySelector('.progressHawaii');
+const mobileProgressHawaii = document.querySelector('.mobileProgressHawaii');
+
+// Progress bar showing duration of song
+function updateProgress(e) {
+  const {duration, currentTime} = event.target;
+  const progressPercent = (currentTime / duration) * 100;
+  progress.style.width = `${progressPercent}%`;
+  progress.style.backgroundColor = "#952525";
+}
+function updateProgressWont(e) {
+  const {duration, currentTime} = event.target;
+  const progressPercent = (currentTime / duration) * 100;
+  progressWont.style.width = `${progressPercent}%`;
+  progressWont.style.backgroundColor = "#952525";
+}
+function updateProgressHawaii(e) {
+  const {duration, currentTime} = event.target;
+  const progressPercent = (currentTime / duration) * 100;
+  progressHawaii.style.width = `${progressPercent}%`;
+  progressHawaii.style.backgroundColor = "#952525";
+}
+// to click on the progress bar and move the song
+function setProgress(e) {
+  const width = this.clientWidth;
+  const clickX = e.offsetX;
+  const duration = audioHome.duration;
+
+  audioHome.currentTime = (clickX / width) * duration;
+}
+function setProgressWont(e) {
+  const width = this.clientWidth;
+  const clickX = e.offsetX;
+  const duration = audioWont.duration;
+
+  audioWont.currentTime = (clickX / width) * duration;
+}
+function setProgressHawaii(e) {
+  const width = this.clientWidth;
+  const clickX = e.offsetX;
+  const duration = audioHawaii.duration;
+
+  audioHawaii.currentTime = (clickX / width) * duration;
+}
 
 
 // home play and pause function
@@ -25,6 +76,14 @@ function play(){
     audio.play();
     homePlay.style.display = "none";
     homePause.style.display = "block";
+    audioWont.pause();
+    audioWont.currentTime = 0;
+    wontPause.style.display = "none";
+    wontPlay.style.display = "block";
+    audioHawaii.pause();
+    audioHawaii.currentTime = 0;
+    hawaiiPause.style.display = "none";
+    hawaiiPlay.style.display = "block";
   } else{
     audio.pause();
     homePlay.style.display = "block";
@@ -38,6 +97,14 @@ function playWont(){
     audio.play();
     wontPlay.style.display = "none";
     wontPause.style.display = "block";
+    audioHome.pause();
+    audioHome.currentTime = 0;
+    homePause.style.display = "none";
+    homePlay.style.display = "block";
+    audioHawaii.pause();
+    audioHawaii.currentTime = 0;
+    hawaiiPause.style.display = "none";
+    hawaiiPlay.style.display = "block";
   } else{
     audio.pause();
     wontPlay.style.display = "block";
@@ -51,12 +118,31 @@ function playHawaii(){
     audio.play();
     hawaiiPlay.style.display = "none";
     hawaiiPause.style.display = "block";
+    audioWont.pause();
+    audioWont.currentTime = 0;
+    wontPause.style.display = "none";
+    wontPlay.style.display = "block";
+    audioHome.pause();
+    audioHome.currentTime = 0;
+    homePause.style.display = "none";
+    homePlay.style.display = "block";
   } else{
     audio.pause();
     hawaiiPlay.style.display = "block";
     hawaiiPause.style.display = "none";
   }
 }
+
+audioHome.addEventListener('timeupdate', updateProgress);
+audioWont.addEventListener('timeupdate', updateProgressWont);
+audioHawaii.addEventListener('timeupdate', updateProgressHawaii);
+// Click on progress bar
+mobileProgress.addEventListener('click', setProgress);
+mobileProgressWont.addEventListener('click', setProgressWont);
+mobileProgressHawaii.addEventListener('click', setProgressHawaii);
+
+
+
 
 
 
