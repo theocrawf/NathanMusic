@@ -27,6 +27,7 @@
     height: 3px;
     background-color: #585858;
     position: relative;
+    cursor: pointer;
   }
   .progress{
     position: absolute;
@@ -173,6 +174,7 @@
     height: 3px;
     background-color: #585858;
     position: relative;
+    cursor: pointer;
   }
   .progressWont{
     position: absolute;
@@ -186,6 +188,7 @@
     height: 3px;
     background-color: #585858;
     position: relative;
+    cursor: pointer;
   }
   .progressHawaii{
     position: absolute;
@@ -317,6 +320,7 @@
     height: 3px;
     background-color: #585858;
     position: relative;
+    cursor: pointer;
   }
   .progress{
     position: absolute;
@@ -459,6 +463,7 @@
     height: 3px;
     background-color: #585858;
     position: relative;
+    cursor: pointer;
   }
   .progressWont{
     position: absolute;
@@ -472,6 +477,7 @@
     height: 3px;
     background-color: #585858;
     position: relative;
+    cursor: pointer;
   }
   .progressHawaii{
     position: absolute;
@@ -558,10 +564,7 @@
 /* ----------------------------laptop view ----------------------------- */
 @media only screen and (min-width: 992px) {
     /* progress bar for all music on page desktop view */
-    .desktoppro{
-      margin: 20px;
-      width: 12vw;
-    }
+    
     /* artist info */
     .artistinfo{
       font-size: 1vw;
@@ -582,6 +585,7 @@
       padding: 1vw 1vh;
       font-size: 18px;
     }
+    
     .follow{
       padding: .9vw 1vh;
       font-size: 18px;
@@ -611,14 +615,14 @@
 /* ----------------------------desktop view----------------------------- */
 @media only screen and (min-width: 1200px) {
   /* progress bar for all music on page desktop view */
-  .desktoppro{
-    margin: 20px;
-    width: 15vw;
-  }
+  
   /* artist info */
   .artistinfo{
     font-size: 1vw;
     color: #ABABAB;
+  }
+  .mobilepro, .mobileProgressHawaii, .mobileProgressWont{
+    height: 5px;
   }
   /* name section */
   #firstname{

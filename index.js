@@ -71,9 +71,8 @@ function setProgressHawaii(e) {
 
 // home play and pause function
 function play(){
-  const audio = document.getElementById('audioHome');
-  if(audio.paused){
-    audio.play();
+  if(audioHome.paused){
+    audioHome.play();
     homePlay.style.display = "none";
     homePause.style.display = "block";
     audioWont.pause();
@@ -85,16 +84,15 @@ function play(){
     hawaiiPause.style.display = "none";
     hawaiiPlay.style.display = "block";
   } else{
-    audio.pause();
+    audioHome.pause();
     homePlay.style.display = "block";
     homePause.style.display = "none";
   }
 }
 // wont get done play
 function playWont(){
-  const audio = document.getElementById('audioWont');
-  if(audio.paused){
-    audio.play();
+  if(audioWont.paused){
+    audioWont.play();
     wontPlay.style.display = "none";
     wontPause.style.display = "block";
     audioHome.pause();
@@ -106,16 +104,15 @@ function playWont(){
     hawaiiPause.style.display = "none";
     hawaiiPlay.style.display = "block";
   } else{
-    audio.pause();
+    audioWont.pause();
     wontPlay.style.display = "block";
     wontPause.style.display = "none";
   }
 }
 // hawaii play
 function playHawaii(){
-  const audio = document.getElementById('audioHawaii');
-  if(audio.paused){
-    audio.play();
+  if(audioHawaii.paused){
+    audioHawaii.play();
     hawaiiPlay.style.display = "none";
     hawaiiPause.style.display = "block";
     audioWont.pause();
@@ -127,11 +124,38 @@ function playHawaii(){
     homePause.style.display = "none";
     homePlay.style.display = "block";
   } else{
-    audio.pause();
+    audioHawaii.pause();
     hawaiiPlay.style.display = "block";
     hawaiiPause.style.display = "none";
   }
 }
+// will go back to beginning and ready to play again
+function startOver () {
+  if (audioHome.currentTime === audioHome.duration){
+    audioHome.currentTime = 0;
+    homePlay.style.display = "block";
+    homePause.style.display = "none";
+  } else{
+  }
+}
+function startOverWont () {
+  if (audioWont.currentTime === audioWont.duration){
+    audioWont.currentTime = 0;
+    wontPlay.style.display = "block";
+    wontPause.style.display = "none";
+  } else{
+  }
+}
+function startOverHawaii () {
+  if (audioHawaii.currentTime === audioHawaii.duration){
+    audioHawaii.currentTime = 0;
+    hawaiiPlay.style.display = "block";
+    hawaiiPause.style.display = "none";
+  } else{
+  }
+}
+
+
 
 audioHome.addEventListener('timeupdate', updateProgress);
 audioWont.addEventListener('timeupdate', updateProgressWont);
@@ -140,6 +164,10 @@ audioHawaii.addEventListener('timeupdate', updateProgressHawaii);
 mobileProgress.addEventListener('click', setProgress);
 mobileProgressWont.addEventListener('click', setProgressWont);
 mobileProgressHawaii.addEventListener('click', setProgressHawaii);
+// starting over the song
+audioHome.addEventListener('timeupdate', startOver);
+audioWont.addEventListener('timeupdate', startOverWont);
+audioHawaii.addEventListener('timeupdate', startOverHawaii);
 
 
 
