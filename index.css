@@ -408,7 +408,7 @@
   #topMiddle h1 {
     grid-area: nathan;
     margin: 2% auto auto 15%;
-    font-size: 50px;
+    font-size: 45px;
     text-align: left;
   }
   #topMiddle p {
@@ -433,7 +433,7 @@
   }
   #middleEarth h1{
     grid-area: music;
-    font-size: 50px;
+    font-size: 45px;
   }
   #middleEarth p {
     margin: auto auto auto 0%;
@@ -551,6 +551,7 @@
 #subscribing{
   align-self: center;
   margin-left: 20%;
+  margin-bottom: 10%;
 }
 .med{
   margin: auto auto 10% 10%;
@@ -633,11 +634,11 @@
   }
   /* comming soon */
   .buy{
-    padding: 1vw 1vh;
+    padding: 1vw 1.35vh;
     font-size: 24px;
   }
   .follow{
-    padding: .9vw 1vh;
+    padding: .9vw 1.35vh;
     font-size: 24px;
   }
   .topbutton{
@@ -649,7 +650,7 @@
     grid-area: pic;
   }
   #topMiddle p {
-   font-size: 25px;
+   font-size: 2vw;
   }
   /* middleEarth/ youtube section */
   iframe {
@@ -657,7 +658,7 @@
     height: 355px;
   }
   #middleEarth p {
-    font-size: 32px;
+    font-size: 2vw;
   }
 /* bottom section/ contact */
   .naming{
