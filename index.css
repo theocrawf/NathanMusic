@@ -583,12 +583,12 @@
       font-size: 24px;
     }
     .buy{
-      padding: 1vw 1vh;
+      padding: .6vw 1vh;
       font-size: 18px;
     }
     
     .follow{
-      padding: .9vw 1vh;
+      padding: .5vw 1vh;
       font-size: 18px;
     }
     .topbutton{
@@ -614,7 +614,7 @@
 
 
 /* ----------------------------desktop view----------------------------- */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
   /* progress bar for all music on page desktop view */
   
   /* artist info */
@@ -634,15 +634,15 @@
   }
   /* comming soon */
   .buy{
-    padding: 1vw 1.35vh;
+    padding: .6vw 1vh;
     font-size: 24px;
   }
   .follow{
-    padding: .9vw 1.35vh;
+    padding: .5vw 1vh;
     font-size: 24px;
   }
   .topbutton{
-    margin-left: 20px;
+    margin-left: 15px;
   }
   /* top middle section */
   #nate {
