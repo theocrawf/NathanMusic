@@ -171,6 +171,19 @@
 
 //different approach to probelm
 const music = ['home', 'wont', 'hawaii'];
+const homeMusic = music[0];
+
+const homeSounds = () => {
+  const homeBtn = document.createElement('button');
+  homeBtn.classList.add('btn');
+  homeBtn.innerText = sound;
+  btn.addEventListener('click', () => {
+    stopSongs()
+    document.getElementById(sound).play()
+  })
+  document.getElementById('homeButtons').appendChild(btn)
+}
+
 
 music.forEach(sound => {
   const btn = document.createElement('button');
